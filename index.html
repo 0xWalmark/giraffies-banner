@@ -113,7 +113,7 @@ window.addEventListener("load", function() {
   Promise.all([loadImg(BG), loadImg(CL)]).then(function(imgs) {
     var ctx = document.getElementById("cv").getContext("2d");
     ctx.drawImage(imgs[0], 0, 0, BANNER_W, BANNER_H);
-    var cloudH = BANNER_H - CLOUD_Y + 40;
+    var cloudH = BANNER_H - CLOUD_Y + 20;
     ctx.drawImage(imgs[1], 0, CLOUD_Y, BANNER_W, cloudH);
     addLog("App ready!", "ok");
   });
